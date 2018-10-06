@@ -1,2 +1,12 @@
+<<<<<<< HEAD
 # ignoring php.ini file 
 /assets/php/app.ini
+=======
+<<<<<<< HEAD
+# ignoring php.ini file 
+/assets/php/app.ini
+=======
+# config.txt file
+config.txt
+>>>>>>> master
+>>>>>>> features/db_1.0
