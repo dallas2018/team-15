@@ -103,6 +103,22 @@ if(!$conn) {
 $conn->close();
 ?>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127072719-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-127072719-1');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T63XG7M');</script>
+<!-- End Google Tag Manager -->
+
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -138,23 +154,25 @@ $conn->close();
 
 </head>
 <body>
-
-	<!-- Home start -->
-	<section  id="home" class="pfblock-image screen-height">
-		<div id="particles-js">
-			<div class="intro">
-				<h1>SER</h1>
-
-			<a href="#apply">
-				<!-- <div class="scroll-down">
-					<span>
-						<i class="fa fa-angle-down fa-2x"></i>
-					</span>
-				</div> -->
-			</a>
-		</div>
-	</section>
-	<!-- Home end -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T63XG7M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Home start -->
+ <section  id="home" class="pfblock-image screen-height">
+       <div id="particles-js">
+           <div class="intro">
+               <h1>S E R</h1>
+           </div>
+           <a href="#apply0">
+               <div class="scroll-down">
+                   <span>
+                       <i class="fa fa-angle-down fa-2x"></i>
+                   </span>
+               </div> -->
+           </a>
+       </div>
+   </section>
+   <!-- Home end -->
 
 	<!-- Navigation start -->
 	<header class="header">
