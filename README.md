@@ -26,8 +26,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Useful Links
 - [Google Drive](https://drive.google.com/drive/folders/1P4z_fL-Z9N9C26eXp3SxL6rPmiktp5zt?usp=sharing)
 - [Slack](https://join.slack.com/t/cfg-group15/shared_invite/enQtNDQ5ODQ5NzE2NzIwLTk2MjlkNmY4ZjhhOTNiMWYxOWY5ZDBlNzg3MTFhNDc2ZDA2YTEyZjcwY2I0ZjIyYzgxOTJlZGEzYmJmNjI0Njg) * click on 'channels' for ui / backend specific chit chat*
-- [Set up Google Analytics](https://www.youtube.com/watch?v=mXcQ7rVn3ro)
-- [Google Tag Manager](https://www.youtube.com/watch?v=WACCJaKPeGk)
 
 
 ## Roadblocks
