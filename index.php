@@ -181,17 +181,17 @@ $conn->close();
 
 				<!-- area -->
           <div class="col s12 m12 l6">
-						<form action="#">
+						<form id="language" action="postData.php" method="post">
 							<label ><div class="question1">Hi, what language are you most comfortable with?</label></div>
 					     <p>
 					       <label>
-					         <input id="myInput" name="group1" type="radio" onclick="location.href='#apply2';"/>
+					         <input id="myInput" name="language" type="radio" onclick="location.href='#apply2';"/>
 					         <span class="choice">English</span>
 					       </label>
 					     </p>
 					     <p>
 					       <label>
-					         <input id="myInput1" name="group1" type="radio" onclick="location.href='#apply2';"/>
+					         <input id="myInput1" name="language" type="radio" onclick="location.href='#apply2';"/>
 					         <span class="choice" >Español</span>
 					       </label>
 					     </p>
@@ -226,15 +226,19 @@ $conn->close();
 
 				<!-- area -->
           <div class="col s12 m12 l6">
+              <form id="f_name"action="postData.php" method="post">
 					<div class="container">
+                        <input name="f_name" type="text" class="validate"
+    					checked autofocus="autofocus"
+    					onKeyDown="if(event.keyCode==13) location.href='#apply3';"
 							<div class="question">What is your first name?</p></div>
-							<div class="text-box" contenteditable="true">
 						</div>
 					</div>
 
 				<!-- Voice recognition -->
 					<i class="fa fa-microphone"></i>
 						<select id="voiceSelect"></select>
+                    </form>
 				</div>
 					<audio class="sound" src="chime.mp3"></audio>
 					<script src="voice.js" async></script>
@@ -268,11 +272,12 @@ $conn->close();
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-
-					<input  type="text" class="validate"
+                    <form id="l_name" action="postData.php" method="post">
+					<input name="l_name" type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply4';"
 					<label ><div class="question">What is your last name?</label></div>
+                </form>
 				</div>
 
 				<!--Progress Bar -->
@@ -299,11 +304,12 @@ $conn->close();
 
 						<!-- area -->
 						<div class="col s12 m12 l6">
-
-							<input  type="text" class="validate"
+                            <form id="dob" action="postData.php" method="post">
+							<input name="dob" type="text" class="validate"
 							checked autofocus="autofocus"
 							onKeyDown="if(event.keyCode==13) location.href='#apply5';"
 							<label ><div class="question">What is your birthday?</label></div>
+                        </form>
 						</div>
 
 						<!--Progress Bar -->
@@ -329,23 +335,23 @@ $conn->close();
 
 				<!-- area -->
 				<div class="input-field col s12 l6 m12">
-					<form action="#">
+					<form id="gender" action="postData.php" method="post">
 						<label ><div class="question">What's your gender?</label></div>
 						 <p>
 							 <label>
-								 <input id="myInput2" name="group1" type="radio" onclick="location.href='#apply6';" />
+								 <input id="myInput2" name="gender" type="radio" onclick="location.href='#apply6';" />
 								 <span class="choice" >Male</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput3" name="group1" type="radio" onclick="location.href='#apply6';"/>
+								 <input id="myInput3" name="gender" type="radio" onclick="location.href='#apply6';"/>
 								 <span class="choice" >Female</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput4" name="group1" type="radio" onclick="location.href='#apply6';"/>
+								 <input id="myInput4" name="gender" type="radio" onclick="location.href='#apply6';"/>
 								 <span class="choice" >Other</span>
 							 </label>
 						 </p>
@@ -375,11 +381,12 @@ $conn->close();
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-
-					<input  type="text" class="validate"
+                    <form id="social" action="postData.php" method="post">
+					<input name="social" type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply7';"
 					<label >last 4 digits of your social security number?</label>
+                </form>
 				</div>
 
 				<!--Progress Bar -->
@@ -405,41 +412,41 @@ $conn->close();
 						</div>
 
 				<!-- area -->
-					<form action="#">
+					<form id="county" action="postData.php" method="post">
 						<label ><div class="question">What county do you currently live in?</label></div>
 						 <p>
 							 <label>
-								 <input id="myInput" class="with-gap" name="group1" type="radio" onclick="location.href='#apply8';" />
+								 <input id="myInput" class="with-gap" name="county" type="radio" onclick="location.href='#apply8';" />
 								 <span class="choice">Houston</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" class="with-gap" name="group1" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput" class="with-gap" name="county" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice" >Fort Bend</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" class="with-gap" name="group1" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput" class="with-gap" name="county" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice" >Galveston</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply8';" />
+								 <input id="myInput" name="county" type="radio" onclick="location.href='#apply8';" />
 								 <span class="choice" >Harris</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput"name="county" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice">Montgomery</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput"name="county" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice" >Other</span>
 							 </label>
 						 </p>
@@ -467,41 +474,41 @@ $conn->close();
 						</div>
 
 				<!-- area -->
-					<form action="#">
+					<form id="need1" action="postData.php" method="post">
 						<label ><div class="question">Please select your top area of need?</label></div>
 						 <p>
 							 <label>
-								 <input id="myInput" name="group2" type="radio" onclick="location.href='#apply9';" />
+								 <input id="myInput" name="need1" type="radio" onclick="location.href='#apply9';" />
 								 <span class="choice">Job Placement</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice">Career Development</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice" >Training</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" name="group2" type="radio" onclick="location.href='#apply9';" />
+								 <input id="myInput" name="need1" type="radio" onclick="location.href='#apply9';" />
 								 <span class="choice">Education</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice">Income Support</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice">Financial Education</span>
 							 </label>
 						 </p>
@@ -530,8 +537,8 @@ $conn->close();
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-
-					<input  type="text" class="validate"
+                    <form id="availability" action="postData.php" method="post">
+					<input name="availability" type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply10';"
 					<label >How many hours a week will you work?</label>
@@ -561,29 +568,29 @@ $conn->close();
 						</div>
 
 				<!-- area -->
-				<form action="#">
+				<form id="time_invest" action="postData.php" method="post">
 					<label ><div class="question">How long will you invest in the program?</label></div>
 					 <p>
 						 <label>
-							 <input id="myInput" name="group1" type="radio" onclick="location.href='#stories';" />
+							 <input id="myInput" name="time_invest" type="radio" onclick="location.href='#stories';" />
 							 <span  class="choice">1 -3 Months</span>
 						 </label>
 					 </p>
 					 <p>
 						 <label>
-							 <input id="myInput"name="group1" type="radio" onclick="location.href='#stories';"/>
+							 <input id="myInput"name="time_invest" type="radio" onclick="location.href='#stories';"/>
 							 <span class="choice">3 -6 Months</span>
 						 </label>
 					 </p>
 					 <p>
 						 <label>
-							 <input id="myInput" name="group1" type="radio" onclick="location.href='#stories';" />
+							 <input id="myInput" name="time_invest" type="radio" onclick="location.href='#stories';" />
 							 <span class="choice">6 -9 Months</span>
 						 </label>
 					 </p>
 					 <p>
 						 <label>
-							 <input id="myInput" name="group1" type="radio" onclick="location.href='#stories';"/>
+							 <input id="myInput" name="time_invest" type="radio" onclick="location.href='#stories';"/>
 							 <span class="choice">9 -12 Months</span>
 						 </label>
 					 </p>
