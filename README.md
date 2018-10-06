@@ -11,7 +11,7 @@
 
 
 ## Video Walkthrough
-[Imgur](https://i.imgur.com/YSbZQpk.gif)
+![Walkthrough](First.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
