@@ -1,5 +1,9 @@
 # *Team 15 taking da chip*
 
+**Objective**
+
+## Solution
+
 **Version 1.0.0**
 
 [Site Link]() hosted using Git Pages.
@@ -11,15 +15,11 @@
 - [Debug Issues](#debug-issues)
 - [License](#license)
 
-## To Do (Stretch)
-- [x] Connect with Google Analytics
-- [ ] Connect Google Tag Manager
-- [ ] Add Thumbnail
-- [ ] Add Bookmark Icon
-- [ ] Projects Text
-- [ ] Articles Text
-- [ ] Skills Text
-- [ ] \(Maybe) button for freelance
+## Stand-ups
+- [ ] (UI)Custom TypeForm
+- [ ] (UI)Landing Page
+- [ ] (UI)Success stories
+- [ ] (UI)
 
 ## Video Walkthrough
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
@@ -27,8 +27,6 @@
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Useful Links
-- [Set up git pages with custom domain](https://medium.com/@kimcodes/setting-up-a-web-page-with-github-pages-f77d45573ab2)
-- [SSL with custom domain](https://www.youtube.com/watch?v=UK5-nO4qK9g) *Using CloudFlare or LetEncrypt for SSL not necessary*
 - [Set up Google Analytics](https://www.youtube.com/watch?v=mXcQ7rVn3ro)
 - [Google Tag Manager](https://www.youtube.com/watch?v=WACCJaKPeGk)
 
