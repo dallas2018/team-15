@@ -112,6 +112,10 @@
 					   </form>
           </div>
 
+					<!--Progress Bar -->
+					<div style="background-color: white; width: 300px; height: 30px; border: 1px solid black">
+  						<div style="background-color: gray; width: 30%; height: 30px;overflow:hidden">&nbsp;</div>
+					</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -518,7 +522,7 @@
 </section>
 	<!-- q15 end -->
 
-	<!-- q16 Living Arrangement-->
+	<!-- q16 Hispanic/Latino Question -->
 	<section id="apply" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
@@ -528,18 +532,25 @@
 						</div>
 
 				<!-- area -->
-					<div class="input-field col s12">
-						<label>What is your current living arrangement?>
-						<select>
-								<option value="" disabled selected>Homeowner</option>
-								<option value="1">Renter - Unsubsized (not receiving public assistance)</option>
-								<option value="2">Renter - Subsidized (receiving public assistance to cover your rent)</option>
-								<option value="3">Living with a friend/dfamily</option>
-								<option value="4">Staying in a shelter</option>
-								<option value="5">Homeless</option>
-						</select>
+				<div class="input-field col s12 l6 m12">
+						<form action="#">
+							<label for="sport"><div class="question">Do you consider yourself Hispanic or Latino?</label></div>
+							 <p>
+								 <label>
+									 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply6';" />
+									 <span><div class="choice">Yes</span></div>
+								 </label>
+							 </p>
+							 <p>
+								 <label>
+									 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+									 <span><div class="choice">No</span></div>
+								 </label>
+							 </p>
 
-					</div>
+
+						 </form>
+				 </div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
