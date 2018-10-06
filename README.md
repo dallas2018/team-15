@@ -15,11 +15,17 @@
 - [Debug Issues](#debug-issues)
 - [License](#license)
 
+## Google Driver Folder
+-[Google Drive](https://drive.google.com/drive/folders/1P4z_fL-Z9N9C26eXp3SxL6rPmiktp5zt?usp=sharing)
+
 ## Stand-ups
+- [x] (Team Collab 101) Ec2, git branch, Slack channels
+- [x] (Team Collab 101) Ec2, git branch, Slack channels
 - [ ] (UI)Custom TypeForm
 - [ ] (UI)Landing Page
 - [ ] (UI)Success stories
 - [ ] (UI)
+
 
 ## Video Walkthrough
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
