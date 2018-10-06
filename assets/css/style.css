@@ -133,7 +133,7 @@
 	}
 
 	.icon.alt:active {
-		background-color: rgba(255, 255, 255, 0.2);	
+		background-color: rgba(255, 255, 255, 0.2);
 	}
 
 body {
@@ -482,7 +482,7 @@ textarea.form-control {
 }
 
 #particles-js{
-	height: 75vh;
+	height: 100vh;
 }
 
 .intro {
@@ -843,7 +843,7 @@ textarea.form-control {
 
 .choice {
 	color: #ffffff;
-	font-size: 140%;
+	font-size: 240%;
 	font-weight:normal;
 }
 /*--------------------------------*/
