@@ -1,2 +1,2 @@
-# config.txt file
-config.txt
+# ignoring php.ini file 
+/assets/php/app.ini
