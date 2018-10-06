@@ -351,13 +351,6 @@ textarea.form-control {
   -o-background-size: cover;
   background-size: cover;
 	padding: 0;
-
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
 }
 
 #particles-js{
@@ -393,8 +386,18 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 /*  q1 */
+
+
 .formAll{
 	height: 100vh;
+
+
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
 
