@@ -14,15 +14,8 @@
 ## Google Driver Folder
 -[Google Drive](https://drive.google.com/drive/folders/1P4z_fL-Z9N9C26eXp3SxL6rPmiktp5zt?usp=sharing)
 
-## To Do (Stretch)
-- [x] Connect with Google Analytics
-- [ ] Connect Google Tag Manager
-- [ ] Add Thumbnail
-- [ ] Add Bookmark Icon
-- [ ] Projects Text
-- [ ] Articles Text
-- [ ] Skills Text
-- [ ] \(Maybe) button for freelance
+## Stand-ups
+- [x] (Team Collab 101) Ec2, git branch, Slack channels
 
 ## Video Walkthrough
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
