@@ -140,11 +140,18 @@
 
 				<!-- area -->
           <div class="col s12 m12 l6">
+					<div class="container">
+							<p>What is your name?</p>
+							<div class="text-box" contenteditable="true">
+						</div>
+					</div>
 
-						<input  type="text" class="validate" checked autofocus="autofocus"
-						onKeyDown="if(event.keyCode==13) location.href='#apply3';"
-						<label ><div class="question">What is your first name?</div><div class="question"></label>
-          </div>
+				<!-- Voice recognition -->
+					<i class="fa fa-microphone"></i>
+						<select id="voiceSelect"></select>
+				</div>
+					<audio class="sound" src="chime.mp3"></audio>
+					<script src="voice.js" async></script>
 
 				<!--Progress Bar -->
 				<br/>
@@ -660,6 +667,7 @@ After graduating, Yemi landed a good job, where she’s remained for the last ye
   <script src="assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/main.js"></script>
+	 <script src="assets/js/voice.js"></script> <!-- link to index.js script -->
 
 	<!-- materialize  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
