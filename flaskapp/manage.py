@@ -10,3 +10,8 @@ manager = Manager(app)
 if __name__ == '__main__':
 	manager.run()
 
+@manager.command
+def initdb():
+	db.create_all()
+	db.session.add(Applicant())
+	refreshdb()

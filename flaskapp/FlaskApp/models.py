@@ -14,10 +14,15 @@ class Applicant(db.Model):
 	email = db.Column(db.string(100))
 	phone = db.Column(db.Integer(10))
 	finished = db.Column(db.Boolean)
+	ssn = db.Column(db.Integer, primary_key = True)
 
 @staticmethod
 def get_by_id(id):
 	return User.query.filterby(id = id).first()
+
+@staticmethod
+def get_by_ssn(ssn):
+	return User.query(filterby(ssn = ssn)).first()
 
 @staticmethod
 def get_by_email(email):
