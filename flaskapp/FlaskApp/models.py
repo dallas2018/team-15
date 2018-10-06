@@ -1,5 +1,5 @@
 from datetime import datetime
-from SignInApp import db
+from FlaskApp import db
 from flask_sqlalchemy import SQLAlchemy
 import json
 import requests

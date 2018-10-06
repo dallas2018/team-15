@@ -3,8 +3,8 @@ import sys, os, operator
 from datetime import datetime
 from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy 
-from SignInApp.models import Member
-from SignInApp import db, app
+from FlaskApp.models import Applicant
+from FlaskApp import db, app
 import requests
 import time
 import json
@@ -18,4 +18,6 @@ date = time.strftime("%m/%d/%Y")
 
 @app.route('/newuser', methods=['GET', ['POST']])
 def index():
-	
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+date = time.strftime("%m/%d/%Y")
