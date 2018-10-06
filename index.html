@@ -104,7 +104,7 @@
 					     </p>
 					     <p>
 					       <label>
-					         <input id="myInput" name="group1" type="radio" id="myBtn" onclick="location.href='#apply2';"/>
+					         <input  name="group1" type="radio" onclick="location.href='#apply2';"/>
 					         <span>Español</span>
 					       </label>
 					     </p>
@@ -134,7 +134,8 @@
 				<!-- area -->
           <div class="input-field col l6 m6 s12">
 						<i class="material-icons prefix">panorama_fish_eye</i>
-						<input id="sport" type="text" class="validate">
+						<input id="sport" type="text" class="validate"
+						onKeyDown="if(event.keyCode==13) location.href='#apply3';"
 						<label for="sport">What is your first name?</label>
           </div>
 
@@ -144,7 +145,7 @@
 	<!-- q2 end -->
 
 	<!-- q3 LAST NAME-->
-	<section id="apply" class="pfblock pfblock-gray formAll" >
+	<section id="apply3" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
 
