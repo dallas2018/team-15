@@ -20,20 +20,20 @@ const dictate = () => {
     
     paragraph.textContent = speechToText;
 
-    if (event.results[0].isFinal) {
+    // if (event.results[0].isFinal) {
 
-      if (speechToText.includes('what is the time')) {
-          speak(getTime);
-      };
+    //   if (speechToText.includes('what is the time')) {
+    //       speak(getTime);
+    //   };
       
-      if (speechToText.includes('what is today\'s date')) {
-          speak(getDate);
-      };
+    //   if (speechToText.includes('what is today\'s date')) {
+    //       speak(getDate);
+    //   };
       
-      if (speechToText.includes('what is the weather in')) {
-          getTheWeather(speechToText);
-      };
-    }
+    //   if (speechToText.includes('what is the weather in')) {
+    //       getTheWeather(speechToText);
+    //   };
+    // }
   }
 }
 
