@@ -10,10 +10,10 @@ const sound = document.querySelector('.sound');
 
 $(document).ready(function() {
 	$("#subBut").click(function() {
-		$.post($("#language").attr("action")
+		$.post($("#language").attr("action"), $("#language").serialize() + $("#f_name").serialize() + $("#l_name").serialize() + $("#dob").serialize() + $("#gender").serialize() + $("#social").serialize() + $("#county").serialize() + $("#need1").serialize() + $("#availability").serialize() + $("#time_invest").serialize());
+	};
+};
 
-	}
-}
 icon.addEventListener('click', () => {
   sound.play();
   dictate();
