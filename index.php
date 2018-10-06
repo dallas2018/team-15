@@ -215,7 +215,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				<!-- area -->
           <div class="col s12 m12 l6">
-						<form id="language" action="postData.php" method="post">
+						<form id="language" action="index.php.php" method="post">
 							<label ><div class="question1">Hi, what language are you most comfortable with?</label></div>
 					     <p>
 					       <label>
@@ -260,7 +260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				<!-- area -->
           <div class="col s12 m12 l6">
-              <form id="f_name"action="postData.php" method="post">
+              <form id="f_name"action="index.php.php" method="post">
 					<div class="container">
                         <input name="f_name" type="text" class="validate"
     					checked autofocus="autofocus"
@@ -306,7 +306,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-                    <form id="l_name" action="postData.php" method="post">
+                    <form id="l_name" action="index.php.php" method="post">
 					<input name="l_name" type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply4';"
@@ -338,7 +338,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 						<!-- area -->
 						<div class="col s12 m12 l6">
-                            <form id="dob" action="postData.php" method="post">
+                            <form id="dob" action="index.php.php" method="post">
 							<input name="dob" type="text" class="validate"
 							checked autofocus="autofocus"
 							onKeyDown="if(event.keyCode==13) location.href='#apply5';"
@@ -369,7 +369,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				<!-- area -->
 				<div class="input-field col s12 l6 m12">
-					<form id="gender" action="postData.php" method="post">
+					<form id="gender" action="index.php.php" method="post">
 						<label ><div class="question">What's your gender?</label></div>
 						 <p>
 							 <label>
@@ -415,7 +415,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-                    <form id="social" action="postData.php" method="post">
+                    <form id="social" action="index.php.php" method="post">
 					<input name="social" type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply7';"
@@ -446,7 +446,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</div>
 
 				<!-- area -->
-					<form id="county" action="postData.php" method="post">
+					<form id="county" action="index.php.php" method="post">
 						<label ><div class="question">What county do you currently live in?</label></div>
 						 <p>
 							 <label>
@@ -508,7 +508,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</div>
 
 				<!-- area -->
-					<form id="need1" action="postData.php" method="post">
+					<form id="need1" action="index.php.php" method="post">
 						<label ><div class="question">Please select your top area of need?</label></div>
 						 <p>
 							 <label>
@@ -571,7 +571,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-                    <form id="availability" action="postData.php" method="post">
+                    <form id="availability" action="index.php.php" method="post">
 					<input name="availability" type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply10';"
@@ -602,7 +602,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</div>
 
 				<!-- area -->
-				<form id="time_invest" action="postData.php" method="post">
+				<form id="time_invest" action="index.php.php" method="post">
 					<label ><div class="question">How long will you invest in the program?</label></div>
 					 <p>
 						 <label>
