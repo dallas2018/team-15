@@ -343,7 +343,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../img/nightsky.jpg) no-repeat center center fixed;
+	//background: url(../img/nightsky.jpg) no-repeat center center fixed;
 	height: 100vh;
 	background-color: #222;
 	-webkit-background-size: cover;
@@ -351,9 +351,16 @@ textarea.form-control {
   -o-background-size: cover;
   background-size: cover;
 	padding: 0;
+
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
-#pSuccess Stories-js{
+#particles-js{
 	height: 75vh;
 }
 
@@ -382,7 +389,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Apply
+ * About
 /* ---------------------------------------------- */
 
 #biodiv p{
@@ -410,7 +417,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Progress
+ * Skills
 /* ---------------------------------------------- */
 
 .chart {
@@ -442,15 +449,6 @@ textarea.form-control {
 /* ---------------------------------------------- /*
  * Call-to-action + Contact
 /* ---------------------------------------------- */
-
-#gradient{
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
 
 @-webkit-keyframes Gradient {
 	0% {
