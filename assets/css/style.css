@@ -389,32 +389,12 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * About
+ * FORM
 /* ---------------------------------------------- */
 
-#biodiv p{
-	font-weight: 500;
-	font-size: 125%;
-}
+/*  q1 */
 
-.iconbox {
-	background: #fff;
-	border-bottom: 1px solid #d4d4d4;
-	text-align: center;
-	padding: 40px 20px;
-	margin: 0 0 20px;
-}
 
-.iconbox-icon {
-	margin: 0 0 15px;
-	font-size: 32px;
-	color: #222;
-}
-
-.iconbox-title {
-	margin: 0 0 15px;
-	padding: 0;
-}
 
 /* ---------------------------------------------- /*
  * Skills
