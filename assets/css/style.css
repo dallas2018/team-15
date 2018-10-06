@@ -829,6 +829,10 @@ textarea.form-control {
 
 }
 
+.question {
+	color: #ffffff;
+	font-size: 120%;
+}
 
 /*--------------------------------*/
 /***** Portfolio Common style *****/
