@@ -16,6 +16,7 @@
 
 ## Stand-ups
 - [x] (Team Collab 101) Ec2, git branch, Slack channels
+- [x] (Team Collab 101) Ec2, git branch, Slack channels
 
 ## Video Walkthrough
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
