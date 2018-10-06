@@ -107,6 +107,10 @@
 					   </form>
           </div>
 
+					<!--Progress Bar -->
+					<div class="progress" style="height: 20px;">
+					  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="100" aria-valuemax="100"></div>
+					</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -130,6 +134,12 @@
 						onKeyDown="if(event.keyCode==13) location.href='#apply3';"
 						<label ><div class="question">What is your first name?</div><div class="question"></label>
           </div>
+
+				<!--Progress Bar -->
+					<div class="progress" style="height: 20px;">
+						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 4%" aria-valuenow="4" aria-valuemin="100" aria-valuemax="100">4%</div>
+					</div>
+
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
@@ -154,7 +164,11 @@
 					<label ><div class="question">What is your last name?</label></div>
 				</div>
 
-			</div>
+				<!--Progress Bar -->
+				<div class="progress" style="height: 20px;">
+					<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 6%" aria-valuenow="6" aria-valuemin="100" aria-valuemax="100">6%</div>
+				</div>
+
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
@@ -177,6 +191,11 @@
 							onKeyDown="if(event.keyCode==13) location.href='#apply5';"
 							<label ><div class="question">What is your birthday?</label></div>
 						</div>
+
+						<!--Progress Bar -->
+							<div class="progress" style="height: 20px;">
+								<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="100" aria-valuemax="100">8%</div>
+							</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -217,6 +236,11 @@
 					 </form>
   		 </div>
 
+			 <!--Progress Bar -->
+				 <div class="progress" style="height: 20px;">
+					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="100" aria-valuemax="100">10%</div>
+				 </div>
+
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
@@ -239,6 +263,13 @@
 					onKeyDown="if(event.keyCode==13) location.href='#apply7';"
 					<label >last 4 digits of your social security number?</label>
 				</div>
+
+				<!--Progress Bar -->
+ 				 <div class="progress" style="height: 20px;">
+ 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="100" aria-valuemax="100">12%</div>
+ 				 </div>
+
+
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -371,6 +402,11 @@
 					<label >How many hours a week will you work?</label>
 				</div>
 
+					<!--Progress Bar -->
+	 				 <div class="progress" style="height: 20px;">
+	 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 18%" aria-valuenow="18" aria-valuemin="100" aria-valuemax="100">18%</div>
+	 				 </div>
+
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
@@ -414,10 +450,241 @@
 					 </p>
 				 </form>
 
+					<!--Progress Bar -->
+	 				 <div class="progress" style="height: 20px;">
+	 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="100" aria-valuemax="100">20%</div>
+	 				 </div>
+
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
 	<!-- q10 end -->
+
+	<!-- q11 Transportation Method-->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-calendar"></span>
+						</div>
+
+				<!-- area -->
+					<div class="input-field col s12">
+						<select>
+								<option value="" disabled selected>Own/lease vehicle</option>
+								<option value="1">Borrow vehicle</option>
+								<option value="2">Public transit</option>
+								<option value="3">Own/lease vehicle but it's not operable/not reliable</option>
+						</select>
+						<label>How do you get from place to place? (Select one)>
+					</div>
+
+					<!--Progress Bar -->
+	 				 <div class="progress" style="height: 20px;">
+	 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="100" aria-valuemax="100">22%</div>
+	 				 </div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+		<!-- q11 end -->
+
+		<!-- q12 ID follow-up question, only displays if "yes" to above-->
+		<section id="apply" class="pfblock pfblock-gray formAll" >
+			<div class="container">
+				<div class="row">
+
+					<div class="col s12 m12 l6">
+								<span class="icon major style1 fa-calendar"></span>
+							</div>
+
+					<!-- area -->
+						<div class="input-field col s12 l6 m12">
+								<form action="#">
+									<label for="sport"><div class="question">Do you have a valid ID? Don’t worry - If not, we can help with that!</label></div>
+									 <p>
+										 <label>
+											 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply6';" />
+											 <span><div class="choice">Yes</span></div>
+										 </label>
+									 </p>
+									 <p>
+										 <label>
+											 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+											 <span><div class="choice">No</span></div>
+										 </label>
+									 </p>
+								 </form>
+						 </div>
+
+				 <!--Progress Bar -->
+	 	 			 <div class="progress" style="height: 20px;">
+	 	 				 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="100" aria-valuemax="100">24%</div>
+	 	 			 </div>
+
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section>
+			<!-- q12 end -->
+
+			<!-- q13 ID follow-up question, only displays if "yes" to above-->
+			<section id="apply" class="pfblock pfblock-gray formAll" >
+				<div class="container">
+					<div class="row">
+
+						<div class="col s12 m12 l6">
+									<span class="icon major style1 fa-calendar"></span>
+								</div>
+
+						<!-- area -->
+							<div class="input-field col s12">
+								<select>
+										<option value="" disabled selected>Texas-issued Driver's License</option>
+										<option value="1">Other State's Driver's License</option>
+										<option value="2">Texas Issued ID Card</option>
+										<option value="3">Other State's ID Card</option>
+										<option value="4">Passport</option>
+								</select>
+								<label>Select one of the following>
+							</div>
+
+						<!--Progress Bar -->
+							<div class="progress" style="height: 20px;">
+								<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 26%" aria-valuenow="26" aria-valuemin="100" aria-valuemax="100">26%</div>
+							</div>
+
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</section>
+				<!-- q13 end -->
+
+				<!-- q14 ID follow-up question, only displays if 0 or 1 to above-->
+				<section id="apply" class="pfblock pfblock-gray formAll" >
+					<div class="container">
+						<div class="row">
+
+							<div class="col s12 m12 l6">
+										<span class="icon major style1 fa-calendar"></span>
+									</div>
+
+							<!-- area -->
+							<div class="input-field col s12 l6 m12">
+									<form action="#">
+										<label for="sport"><div class="question">What type of driver's license do you have?</label></div>
+										 <p>
+											 <label>
+												 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply6';" />
+												 <span><div class="choice">A</span></div>
+											 </label>
+										 </p>
+										 <p>
+											 <label>
+												 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+												 <span><div class="choice">B</span></div>
+											 </label>
+										 </p>
+										 <p>
+											 <label>
+												 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+												 <span><div class="choice">C</span></div>
+											 </label>
+										 </p>
+										 <p>
+											 <label>
+												 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+												 <span><div class="choice">M</span></div>
+											 </label>
+										 </p>
+									 </form>
+							 </div>
+
+							 <!--Progress Bar -->
+	 							<div class="progress" style="height: 20px;">
+	 								<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="100" aria-valuemax="100">28%</div>
+	 							</div>
+
+
+						</div><!-- .row -->
+					</div><!-- .container -->
+				</section>
+					<!-- q14 end -->
+
+<!-- Some sort of Checkpoint would be good here!>
+
+<!-- q15 Living Arrangement-->
+<section id="apply" class="pfblock pfblock-gray formAll" >
+	<div class="container">
+		<div class="row">
+
+			<div class="col s12 m12 l6">
+						<span class="icon major style1 fa-calendar"></span>
+					</div>
+
+			<!-- area -->
+				<div class="input-field col s12">
+					<label>What is your current living arrangement?>
+					<select>
+							<option value="" disabled selected>Homeowner</option>
+							<option value="1">Renter - Unsubsized (not receiving public assistance)</option>
+							<option value="2">Renter - Subsidized (receiving public assistance to cover your rent)</option>
+							<option value="3">Living with a friend/dfamily</option>
+							<option value="4">Staying in a shelter</option>
+							<option value="5">Homeless</option>
+					</select>
+
+				</div>
+
+				<!--Progress Bar -->
+				 <div class="progress" style="height: 20px;">
+					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="100" aria-valuemax="100">30%</div>
+				 </div>
+
+		</div><!-- .row -->
+	</div><!-- .container -->
+</section>
+	<!-- q15 end -->
+
+	<!-- q16 Hispanic/Latino Question -->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-calendar"></span>
+						</div>
+
+				<!-- area -->
+				<div class="input-field col s12 l6 m12">
+						<form action="#">
+							<label for="sport"><div class="question">Do you consider yourself Hispanic or Latino?</label></div>
+							 <p>
+								 <label>
+									 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply6';" />
+									 <span><div class="choice">Yes</span></div>
+								 </label>
+							 </p>
+							 <p>
+								 <label>
+									 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+									 <span><div class="choice">No</span></div>
+								 </label>
+							 </p>
+
+
+						 </form>
+				 </div>
+
+				 <!--Progress Bar -->
+ 				 <div class="progress" style="height: 20px;">
+ 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="100" aria-valuemax="100">32</div>
+ 				 </div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+		<!-- q16 end -->
+
 
 
 
@@ -426,20 +693,47 @@
 
 		<div class="container">
         <div class="row">
+
 				<div class="col-sm-6 col-sm-offset-3">
 					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">Articles</h2>
+						<h2 class="pfblock-title">Success Stories</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
 							No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
 						</div>
 					</div>
 				</div>
-			</div><!-- .row -->
+
+
+			</div>
+
+			<div>
+				<table style="width:100%">
+				  <tr>
+				    <th>Firstname</th>
+				    <th>Lastname</th>
+				    <th>Age</th>
+				  </tr>
+				  <tr>
+				    <td>Jill</td>
+				    <td>Smith</td>
+				    <td>50</td>
+				  </tr>
+				  <tr>
+				    <td>Eve</td>
+				    <td>Jackson</td>
+				    <td>94</td>
+				  </tr>
+				</table>
+			</div>
+
+
 			<div class="row">
+
+
 			<div id="cbp-qtrotator" class="cbp-qtrotator">
                 <div class="cbp-qtcontent">
-                    <img src="assets/img/hologram.jpg" alt="client-1" width="350" />
+                    <img src="assets/img/content.jpg" alt="client-1" width="350" />
                     <blockquote>
                       <p>"Cultures, religious sects, and any word used to differentiate and divide society is seriously endangered."
 												<a href="https://medium.com/@yasinehsan11/bits-and-bytes-fight-or-flight-3786842b56da" class="myPapers"><b>Read More</b></a>
