@@ -7,6 +7,8 @@ $db_name = $ini['db_name'];
 $db_user = $ini['db_user'];
 $db_pass = $ini['db_pass'];
 
+$conn = mysqli_connect("localhost", $db_user, $db_pass, $db_name);
+
 //declare variables
 $dob = "";
 $f_name = "";
@@ -71,7 +73,9 @@ if(isset($_POST['transport'])) {
     $social = $_POST['transport'];
 }
 
-$conn = mysqli_connect("localhost", $db_user, $db_pass, $db_name);
+$stmt = $conn->prepare('INSERT INTO client (dob, f_name, l_name, social, county, gender, need1, need2, need3, availability, time_invest, transport) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+$stmt->bind_param('issssissssss');
+$stmt->execute();
 $resumeQuery = "select * from clients where dbo='".$dbo."', f_name='".$f_name."', l_name='".$l_name."', social='".$social."';";
 // $sqlStatement = $conn->prepare($resumeQuery);
 // $sqlStatement->execute();
@@ -80,7 +84,7 @@ $resumeQuery = "select * from clients where dbo='".$dbo."', f_name='".$f_name."'
 if(!$conn) {
     echo "THERE WAS AN ERROR CONNECTING";
 }
-
+$conn->close();
 ?>
 <head>
 
