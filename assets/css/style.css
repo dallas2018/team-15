@@ -831,9 +831,13 @@ textarea.form-control {
 
 .question {
 	color: #ffffff;
-	font-size: 150%;
+	font-size: 180%;
 }
 
+.choice {
+	color: #ffffff;
+	font-size: 140%;
+}
 /*--------------------------------*/
 /***** Portfolio Common style *****/
 /*--------------------------------*/
