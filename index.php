@@ -130,11 +130,11 @@ $conn->close();
 				<h1>SER</h1>
 
 			<a href="#apply">
-				<div class="scroll-down">
+				<!-- <div class="scroll-down">
 					<span>
 						<i class="fa fa-angle-down fa-2x"></i>
 					</span>
-				</div>
+				</div> -->
 			</a>
 		</div>
 	</section>
