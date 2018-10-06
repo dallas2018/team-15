@@ -1,12 +1,7 @@
-# *Team 15 taking da chip*
+# *SER Re-launch*
+**Version 2.0**
+**Objective** To help...
 
-**Objective**
-
-## Solution
-
-**Version 1.0.0**
-
-[Site Link]() hosted using Git Pages.
 
 ## Readme Contents
 - [To Do](#to-do)
@@ -16,10 +11,12 @@
 - [License](#license)
 
 ## Stand-ups
-- [ ] (UI)Custom TypeForm
+- [x] (Team Collab 101) Ec2, git branch, Slack channels
+- [x] (UI)Custom TypeForm
 - [ ] (UI)Landing Page
 - [ ] (UI)Success stories
 - [ ] (UI)
+
 
 ## Video Walkthrough
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
@@ -27,35 +24,20 @@
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Useful Links
+- [Google Drive](https://drive.google.com/drive/folders/1P4z_fL-Z9N9C26eXp3SxL6rPmiktp5zt?usp=sharing)
+- [Slack](https://join.slack.com/t/cfg-group15/shared_invite/enQtNDQ5ODQ5NzE2NzIwLTk2MjlkNmY4ZjhhOTNiMWYxOWY5ZDBlNzg3MTFhNDc2ZDA2YTEyZjcwY2I0ZjIyYzgxOTJlZGEzYmJmNjI0Njg) * click on 'channels' for ui / backend specific chit chat*
 - [Set up Google Analytics](https://www.youtube.com/watch?v=mXcQ7rVn3ro)
 - [Google Tag Manager](https://www.youtube.com/watch?v=WACCJaKPeGk)
 
 
-## Debug Issues
-- Trying to access non-SSL certified links from a secure connection will not work. Instead change the URL to without the protocol OR change http links to https.
+## Roadblocks
+- Trying to recreate TypeForm, we wanted to seamlessly transition to the next question without the user "clicking" - trigger when the user hit enter. Solution:
+    ```javascript
+    onKeyDown="if(event.keyCode==13) location.href='#apply3';"
+    ```
 
    Change `http://resources.infolinks.com/js/infolinks_main.js` to `//resources.infolinks.com/js/infolinks_main.js` or `httpS://resources.infolinks.com/js/infolinks_main.js`
 
-- Found warning when I ran Chrome Inspector. Apparently Google Chrome updated Smoothscroll.js. Quick Fix:
-   Replace
-   ```javascript
-    var ischrome = /chrome/.test(navigator.userAgent.toLowerCase());
-    if (ischrome) {
-        ssc_addEvent("mousedown", ssc_mousedown);
-        ssc_addEvent("mousewheel", ssc_wheel);
-        ssc_addEvent("load", ssc_init)
-    }
-   ```
-   with
-   ```Javascript
-   var ischrome = /chrome/.test(navigator.userAgent.toLowerCase());
-   if (false) {                          REPLACEMENT
-   	ssc_addEvent("mousedown", ssc_mousedown);
-   	ssc_addEvent("mousewheel", ssc_wheel);
-   	ssc_addEvent("load", ssc_init);
-    }
-    ```
-    **Note:** isChrome is just a variable.
 
 ## License
 © 2018 Team 15

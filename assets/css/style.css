@@ -8,6 +8,134 @@
  * Licensed under MIT
 */
 
+	.icon {
+		text-decoration: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon.major {
+			border: solid 1.5px;
+			display: inline-block;
+			border-radius: 100%;
+			padding: 0.65em;
+			margin: 0 0 2em 0;
+			cursor: default;
+		}
+
+			.icon.major:before {
+				display: inline-block;
+				font-size: 6.25rem;
+				width: 2.25em;
+				height: 2.25em;
+				line-height: 2.2em;
+				border-radius: 100%;
+				border: solid 1px;
+				text-align: center;
+			}
+
+		.icon.alt {
+			display: inline-block;
+			border: solid 1px;
+			border-radius: 100%;
+		}
+
+			.icon.alt:before {
+				display: block;
+				font-size: 1.25em;
+				width: 2em;
+				height: 2em;
+				text-align: center;
+				line-height: 2em;
+			}
+
+		.icon.style1 {
+			color: #ffffff;
+		}
+
+		.icon.style2 {
+			color: #c79cc8;
+		}
+
+		.icon.style3 {
+			color: #a89cc8;
+		}
+
+		.icon.style4 {
+			color: #9bb2e1;
+		}
+
+		.icon.style5 {
+			color: #8cc9f0;
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			.icon.major:before {
+				font-size: 5.5rem;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.icon.major:before {
+				font-size: 4.75rem;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.icon.major {
+				margin: 0 0 1.5em 0;
+				padding: 0.35em;
+			}
+
+				.icon.major:before {
+					font-size: 3.5rem;
+				}
+
+		}
+
+	.icon.major {
+		border-color: rgba(255, 255, 255, 0.35);
+	}
+
+	.icon.major:before {
+		border-color: rgba(255, 255, 255, 0.35);
+	}
+
+	.icon.alt {
+		border-color: rgba(255, 255, 255, 0.35);
+		color: #ffffff;
+	}
+
+	.icon.alt:hover {
+			background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	.icon.alt:active {
+		background-color: rgba(255, 255, 255, 0.2);	
+	}
+
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
@@ -351,13 +479,6 @@ textarea.form-control {
   -o-background-size: cover;
   background-size: cover;
 	padding: 0;
-
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
 }
 
 #particles-js{
@@ -389,32 +510,23 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * About
+ * Typeform
 /* ---------------------------------------------- */
 
-#biodiv p{
-	font-weight: 500;
-	font-size: 125%;
+/*  q1 */
+
+
+.formAll{
+	height: 100vh;
+	color: #ffffff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
-.iconbox {
-	background: #fff;
-	border-bottom: 1px solid #d4d4d4;
-	text-align: center;
-	padding: 40px 20px;
-	margin: 0 0 20px;
-}
 
-.iconbox-icon {
-	margin: 0 0 15px;
-	font-size: 32px;
-	color: #222;
-}
-
-.iconbox-title {
-	margin: 0 0 15px;
-	padding: 0;
-}
 
 /* ---------------------------------------------- /*
  * Skills
@@ -717,6 +829,10 @@ textarea.form-control {
 
 }
 
+.question {
+	color: #ffffff;
+	font-size: 120%;
+}
 
 /*--------------------------------*/
 /***** Portfolio Common style *****/

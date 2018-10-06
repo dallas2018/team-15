@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-
 	<title>SER</title>
 
 	<!-- CSS -->
@@ -18,23 +17,26 @@
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
 
+	<!-- Load materializecss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="src/css/main.css" rel="stylesheet">
+
+    <!-- Load fav and touch icons -->
+    <link rel="shortcut icon" href="assets/favicon.png">
+
 	<!-- google text fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 			<script src="assets/js/modernizr.custom.js"></script>
 
 </head>
 <body>
 
 	<!-- Home start -->
-
 	<section  id="home" class="pfblock-image screen-height">
 		<div id="particles-js">
 			<div class="intro">
 				<h1>SER</h1>
-
-
-
-			</div>
 
 			<a href="#apply">
 				<div class="scroll-down">
@@ -44,20 +46,13 @@
 				</div>
 			</a>
 		</div>
-
-
 	</section>
-
 	<!-- Home end -->
 
 	<!-- Navigation start -->
-
 	<header class="header">
-
 		<nav class="navbar navbar-custom" role="navigation">
-
 			<div class="container">
-
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -72,104 +67,305 @@
 					<ul class="nav navbar-nav navbar-right">
 						<!-- <li><a href="#home">Home</a></li> -->
 						<li><a href="#apply">Apply</a></li>
-	          <li><a href="#skills">Progress</a></li>
+	          <!-- <li><a href="#skills">Progress</a></li> -->
 						<li><a href="#articles">Articles</a></li>
 						<!-- <li><a href="#contact">Contact</a></li> -->
 					</ul>
 				</div>
-
 			</div><!-- .container -->
-
 		</nav>
-
 	</header>
-
 	<!-- Navigation end -->
 
-    <!-- apply start -->
 
-	<section id="apply" class="pfblock pfblock-gray">
+
+  <!-- q1 LANGUAGE-->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
 
+				<div class="col s12 m12 l6">
+              <!-- <div class="card"> -->
+                <!-- <div class="card-image">
+                  <img src="assets/img/021-chat.png">
+                </div> -->
+                <span class="icon major style1 fa-comments"></span>
+							</div>
+						<!-- </div> -->
 
-			</div>
-
-			<div class="row">
-
-
-				<head> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> <title>Registration Form (copy)</title> <style type="text/css"> html{ margin: 0; height: 100%; overflow: hidden; } iframe{ position: absolute; left:0; right:0; bottom:0; top:0; border:0; } </style> </head> <body> <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://jessicahuang3.typeform.com/to/IC5xYp"></iframe> <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script> </body> 
-
+				<!-- area -->
+          <div class="input-field col l6 m6 s12">
+						<form action="#">
+							<div class="question"><label for="sport">Hi, What language are you most comfortable with?</label></div>
+					     <p>
+					       <label>
+					         <input id="myInput" name="group1" type="radio" onclick="location.href='#apply2';" checked autofocus="autofocus"/>
+					         <span>English</span>
+					       </label>
+					     </p>
+					     <p>
+					       <label>
+					         <input id="myInput"name="group1" type="radio" onclick="location.href='#apply2';"/>
+					         <span>Español</span>
+					       </label>
+					     </p>
+					   </form>
+          </div>
 
 
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
-
-	<!-- apply end -->
-
+	<!-- q1 end -->
 
 
-    <!-- skills start -->
+	<!-- q2 FIRST NAME-->
+	<section id="apply2" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
 
-  <section class="pfblock pfblock-gray" id="skills">
+				<div class="col s12 m12 l6">
+              <!-- <div class="card">
+                <div class="card-image">
+                  <img src="assets/img/content.jpg">
+                </div>
+							</div> -->
+				<span class="icon major style1 fa-user"></span>
+							</div>
+						</div>
 
-			<div class="container">
+				<!-- area -->
+          <div class="input-field col l6 m6 s12">
+						<i class="material-icons prefix">panorama_fish_eye</i>
+						<input  type="text" class="validate" autofocus="autofocus"
+						onKeyDown="if(event.keyCode==13) location.href='#apply3';"
+						<label for="sport">What is your first name?</label>
+          </div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q2 end -->
 
-				<div class="row skills">
+	<!-- q3 LAST NAME-->
+	<section id="apply3" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
 
-					<div class="row">
+				<div class="col s12 m12 l6">
+              <span class="icon major style1 fa-user"></span>
+							</div>
+						</div>
 
-                        <div class="col-sm-6 col-sm-offset-3">
+				<!-- area -->
+				<div class="input-field col l6 m6 s12">
+					<i class="material-icons prefix">panorama_fish_eye</i>
+					<input  type="text" class="validate"
+					onKeyDown="if(event.keyCode==13) location.href='#apply4';"
+					<label for="sport">What is your first name?</label>
+				</div>
 
-                            <div class="pfblock-header wow fadeInUp">
-                                <h2 class="pfblock-title">Our Journey</h2>
-                                <div class="pfblock-line"></div>
-                                <div class="pfblock-subtitle">Together we achieve better.
-                                </div>
-                            </div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q3 end -->
 
-                        </div>
+	<!-- q4 BIRTHDAY-->
+	<section id="apply4" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
 
-                    </div><!-- .row -->
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-calendar"></span>
+						</div>
 
-					<div class="col-sm-6 col-md-4 text-center">
-						<span data-percent="95" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
-                            <span class="percent">95</span>
-                        </span>
-						<h3 class="text-center">Jobs</h3>
+						<!-- area -->
+						<div class="input-field col l6 m6 s12">
+							<i class="material-icons prefix">panorama_fish_eye</i>
+							<input  type="text" class="validate"
+							onKeyDown="if(event.keyCode==13) location.href='#apply5';"
+							<label for="sport">What is your birthday?</label>
+						</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q4 end -->
+
+	<!-- q5 GENDER-->
+	<section id="apply5" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-calendar"></span>
+							</div>
+
+				<!-- area -->
+				<div class="input-field col s12 l6 m12">
+					<form action="#">
+						<label for="sport">Hi, What language are you most comfortable with?</label>
+						 <p>
+							 <label>
+								 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply6';" />
+								 <span>Male</span>
+							 </label>
+						 </p>
+						 <p>
+							 <label>
+								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+								 <span>Female</span>
+							 </label>
+						 </p>
+						 <p>
+							 <label>
+								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+								 <span>Other</span>
+							 </label>
+						 </p>
+					 </form>
+  		 </div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q5 end -->
+
+	<!-- q6 SSN-->
+	<section id="apply6" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-calendar"></span>
+						</div>
+
+				<!-- area -->
+					<div class="input-field col l6 m6 s12">
+						<i class="material-icons prefix">panorama_fish_eye</i>
+						<input  type="text" class="validate">
+						<label for="sport">Can you give us the last 4 digits of your social security number?</label>
 					</div>
-					<div class="col-sm-6 col-md-4 text-center">
-						<span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
-                            <span class="percent">80</span>
-                        </span>
-						<h3 class="text-center">Java</h3>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q6 end -->
+
+	<!-- q7 County-->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-map-marker"></span>
+						</div>
+
+				<!-- area -->
+					<div class="input-field col l6 m6 s12">
+						<div class="input-field col s12">
+    					<select>
+      					<option value="" disabled selected>Brazoria</option>
+      					<option value="1">Chambers</option>
+      					<option value="2">Fort Bend</option>
+      					<option value="3">Galveston</option>
+								<option value="4">Harris</option>
+								<option value="5">Liberty</option>
+								<option value="6">Montgomery</option>
+								<option value="7">Waller</option>
+								<option value="8">Other</option>
+    					</select>
+    					<label>What county do you currently live in?</label>
+  					</div>
+						<i class="material-icons prefix">panorama_fish_eye</i>
+						<input type="text" class="validate">
+						<label for="sport">What county do you currently live in?</label>
 					</div>
-					<div class="col-sm-6 col-md-4 text-center">
-						<span data-percent="50" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
-                            <span class="percent">50</span>
-                        </span>
-						<h3 class="text-center">Swift / Python</h3>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q7 end -->
+
+	<!-- q8 Top 3 Needs-->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-exclamation"></span>
+						</div>
+
+				<!-- area -->
+					<div class="input-field col l6 m6 s12">
+						<i class="material-icons prefix">panorama_fish_eye</i>
+						<input  type="text" class="validate">
+						<label for="sport">Please select your top three areas of need, in order.</label>
 					</div>
-				</div><!--End row -->
 
-			</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q8 end -->
 
-    </section>
+	<!-- q9 Availability-->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
 
-    <!-- skills end -->
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-calendar"></span>
+						</div>
+
+				<!-- area -->
+					<div class="input-field col s12">
+						<select>
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+						</select>
+						<label>Materialize Select</label>
+					</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q9 end -->
+
+	<!-- q10 Commitment slider-->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-clock-o"></span>
+						</div>
+
+				<!-- area -->
+					<div class="input-field col l6 m6 s12">
+						<i class="material-icons prefix">panorama_fish_eye</i>
+						<input  type="text" class="validate">
+						<form action="#">
+							<p class="range-field">
+								<input type="range" id="test5" min="0" max="100" />
+							</p>
+						</form>
+						<label for="sport">How long are you willing to invest in a program?</label>
+					</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q10 end -->
+
 
 
 	<!-- articles start -->
-
 	<section id="articles" class="pfblock pfblock-gray">
 
 		<div class="container">
-
-            <div class="row">
-
+        <div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title">Articles</h2>
 						<div class="pfblock-line"></div>
@@ -177,13 +373,9 @@
 							No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
 						</div>
 					</div>
-
 				</div>
-
 			</div><!-- .row -->
-
-            <div class="row">
-
+			<div class="row">
 			<div id="cbp-qtrotator" class="cbp-qtrotator">
                 <div class="cbp-qtcontent">
                     <img src="assets/img/hologram.jpg" alt="client-1" width="350" />
@@ -203,23 +395,16 @@
                       <footer>My Story, My Mantra</footer>
                     </blockquote>
                 </div>
-
-
             </div>
-
             </div><!-- .row -->
-
-
 		</div><!-- .row -->
 	</section>
-
 	<!-- article end -->
 
 
 
 
 	<!-- Footer start -->
-
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
@@ -254,7 +439,6 @@
     <!-- Scroll to top end-->
 
 	<!-- Javascript files -->
-
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
@@ -268,12 +452,15 @@
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/main.js"></script>
 
+	<!-- materialize  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<!-- particles css -->
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
 	particlesJS.load('particles-js', 'assets/json/particles.json', function() {
 	console.log('callback - particles.js config loaded');});
 	</script>
+
 
 </body>
 </html>
