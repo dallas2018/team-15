@@ -85,26 +85,27 @@
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-              <div class="card">
-                <div class="card-image">
+              <!-- <div class="card"> -->
+                <!-- <div class="card-image">
                   <img src="assets/img/021-chat.png">
-                </div>
+                </div> -->
+                <span class="icon major style1 fa-comments"></span>
 							</div>
-						</div>
+						<!-- </div> -->
 
 				<!-- area -->
           <div class="input-field col l6 m6 s12">
 						<form action="#">
-							<label for="sport">Hi, What language are you most comfortable with?</label>
+							<div class="question"><label for="sport">Hi, What language are you most comfortable with?</label></div>
 					     <p>
 					       <label>
-					         <input id="myInput" name="group1" type="radio" checked />
+					         <input id="myInput" name="group1" type="radio" onclick="location.href='#apply2';" checked autofocus="autofocus"/>
 					         <span>English</span>
 					       </label>
 					     </p>
 					     <p>
 					       <label>
-					         <input id="myInput" name="group1" type="radio" id="myBtn" onclick="location.href='#apply2';"/>
+					         <input id="myInput"name="group1" type="radio" onclick="location.href='#apply2';"/>
 					         <span>Español</span>
 					       </label>
 					     </p>
@@ -124,44 +125,44 @@
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-              <div class="card">
+              <!-- <div class="card">
                 <div class="card-image">
                   <img src="assets/img/content.jpg">
                 </div>
+							</div> -->
+				<span class="icon major style1 fa-user"></span>
 							</div>
 						</div>
 
 				<!-- area -->
           <div class="input-field col l6 m6 s12">
 						<i class="material-icons prefix">panorama_fish_eye</i>
-						<input id="sport" type="text" class="validate">
+						<input  type="text" class="validate" autofocus="autofocus"
+						onKeyDown="if(event.keyCode==13) location.href='#apply3';"
 						<label for="sport">What is your first name?</label>
           </div>
-
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
 	<!-- q2 end -->
 
 	<!-- q3 LAST NAME-->
-	<section id="apply" class="pfblock pfblock-gray formAll" >
+	<section id="apply3" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="assets/img/008-id-card.png">
-                </div>
+              <span class="icon major style1 fa-user"></span>
 							</div>
 						</div>
 
 				<!-- area -->
-          <div class="input-field col l6 m6 s12">
-						<i class="material-icons prefix">panorama_fish_eye</i>
-						<input id="sport" type="text" class="validate">
-						<label for="sport">What is your last name?</label>
-          </div>
+				<div class="input-field col l6 m6 s12">
+					<i class="material-icons prefix">panorama_fish_eye</i>
+					<input  type="text" class="validate"
+					onKeyDown="if(event.keyCode==13) location.href='#apply4';"
+					<label for="sport">What is your first name?</label>
+				</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -169,24 +170,21 @@
 	<!-- q3 end -->
 
 	<!-- q4 BIRTHDAY-->
-	<section id="apply" class="pfblock pfblock-gray formAll" >
+	<section id="apply4" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-							<div class="card">
-								<div class="card-image">
-									<img src="assets/img/035-calendar.png">
-								</div>
-							</div>
+							<span class="icon major style1 fa-calendar"></span>
 						</div>
 
-				<!-- area -->
-				<div class="input-field col l6 m12 s12">
-            <i class="material-icons prefix">date_range</i>
-            <input id="date" type="date" class="validate">
-            <label for="date">Date</label>
-          </div>
+						<!-- area -->
+						<div class="input-field col l6 m6 s12">
+							<i class="material-icons prefix">panorama_fish_eye</i>
+							<input  type="text" class="validate"
+							onKeyDown="if(event.keyCode==13) location.href='#apply5';"
+							<label for="sport">What is your birthday?</label>
+						</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -194,28 +192,38 @@
 	<!-- q4 end -->
 
 	<!-- q5 GENDER-->
-	<section id="apply" class="pfblock pfblock-gray formAll" >
+	<section id="apply5" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-							<div class="card">
-								<div class="card-image">
-									<img src="assets/img/content.jpg">
-								</div>
+							<span class="icon major style1 fa-calendar"></span>
 							</div>
-						</div>
 
 				<!-- area -->
 				<div class="input-field col s12 l6 m12">
-    <select>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Materialize Select</label>
-  </div>
+					<form action="#">
+						<label for="sport">Hi, What language are you most comfortable with?</label>
+						 <p>
+							 <label>
+								 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply6';" />
+								 <span>Male</span>
+							 </label>
+						 </p>
+						 <p>
+							 <label>
+								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+								 <span>Female</span>
+							 </label>
+						 </p>
+						 <p>
+							 <label>
+								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply6';"/>
+								 <span>Other</span>
+							 </label>
+						 </p>
+					 </form>
+  		 </div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -223,22 +231,18 @@
 	<!-- q5 end -->
 
 	<!-- q6 SSN-->
-	<section id="apply" class="pfblock pfblock-gray formAll" >
+	<section id="apply6" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-							<div class="card">
-								<div class="card-image">
-									<img src="assets/img/content.jpg">
-								</div>
-							</div>
+							<span class="icon major style1 fa-calendar"></span>
 						</div>
 
 				<!-- area -->
 					<div class="input-field col l6 m6 s12">
 						<i class="material-icons prefix">panorama_fish_eye</i>
-						<input id="sport" type="text" class="validate">
+						<input  type="text" class="validate">
 						<label for="sport">Can you give us the last 4 digits of your social security number?</label>
 					</div>
 
@@ -253,11 +257,7 @@
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-							<div class="card">
-								<div class="card-image">
-									<img src="assets/img/content.jpg">
-								</div>
-							</div>
+							<span class="icon major style1 fa-map-marker"></span>
 						</div>
 
 				<!-- area -->
@@ -277,7 +277,7 @@
     					<label>What county do you currently live in?</label>
   					</div>
 						<i class="material-icons prefix">panorama_fish_eye</i>
-						<input id="sport" type="text" class="validate">
+						<input type="text" class="validate">
 						<label for="sport">What county do you currently live in?</label>
 					</div>
 
@@ -292,17 +292,13 @@
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-							<div class="card">
-								<div class="card-image">
-									<img src="assets/img/content.jpg">
-								</div>
-							</div>
+							<span class="icon major style1 fa-exclamation"></span>
 						</div>
 
 				<!-- area -->
 					<div class="input-field col l6 m6 s12">
 						<i class="material-icons prefix">panorama_fish_eye</i>
-						<input id="sport" type="text" class="validate">
+						<input  type="text" class="validate">
 						<label for="sport">Please select your top three areas of need, in order.</label>
 					</div>
 
@@ -317,11 +313,7 @@
 			<div class="row">
 
 				<div class="col s12 m12 l6">
-							<div class="card">
-								<div class="card-image">
-									<img src="assets/img/content.jpg">
-								</div>
-							</div>
+							<span class="icon major style1 fa-calendar"></span>
 						</div>
 
 				<!-- area -->
@@ -338,7 +330,35 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
-	<!-- q6 end -->
+	<!-- q9 end -->
+
+	<!-- q10 Commitment slider-->
+	<section id="apply" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+
+				<div class="col s12 m12 l6">
+							<span class="icon major style1 fa-clock-o"></span>
+						</div>
+
+				<!-- area -->
+					<div class="input-field col l6 m6 s12">
+						<i class="material-icons prefix">panorama_fish_eye</i>
+						<input  type="text" class="validate">
+						<form action="#">
+							<p class="range-field">
+								<input type="range" id="test5" min="0" max="100" />
+							</p>
+						</form>
+						<label for="sport">How long are you willing to invest in a program?</label>
+					</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- q10 end -->
+
+
 
 	<!-- articles start -->
 	<section id="articles" class="pfblock pfblock-gray">

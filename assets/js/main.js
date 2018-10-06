@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, options);
   });
-  
-//Custom ID
+
+//Custom ID for forms
   var input = document.getElementById("myInput");
   input.addEventListener("keyup", function(event) {
       event.preventDefault();
@@ -19,3 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
           document.getElementById("myBtn").click();
       }
   });
+
+  document.getElementById('myInput').onkeydown = function(event) {
+      if (event.keyCode == 13) {
+          alert('5');
+      }
+  }
