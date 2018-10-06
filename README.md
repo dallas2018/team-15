@@ -1,25 +1,17 @@
 # *SER Re-launch*
-**Version 2.0**
-**Objective** To help...
-
-
-## Readme Contents
-- [To Do](#to-do)
-- [Video Walkthrough](#video-walkthrough)
-- [Useful Links](#useful-links)
-- [Debug Issues](#debug-issues)
-- [License](#license)
+**SER Version 2.0**
+**Objective** To increase engagement and improve outcomes for a local NGO by humanizing its application process.
 
 ## Stand-ups
 - [x] (Team Collab 101) Ec2, git branch, Slack channels
 - [x] (UI)Custom TypeForm
-- [ ] (UI)Landing Page
-- [ ] (UI)Success stories
-- [ ] (UI)
+- [x] (UI)Landing Page
+- [x] (UI)Success stories
+- [ ] (UI)Save Forms
 
 
 ## Video Walkthrough
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Imgur](https://i.imgur.com/YSbZQpk.gifv)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
