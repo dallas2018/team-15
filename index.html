@@ -132,7 +132,11 @@
 
 						<input  type="text" class="validate" checked autofocus="autofocus"
 						onKeyDown="if(event.keyCode==13) location.href='#apply3';"
-						<label ><div class="question">What is your first name?</div><div class="question"></label>
+						<label ><div class="question">What is your first name?
+						<i class="fa fa-microphone"></i> <!-- microphone icon to be clicked before speaking --></div>
+						<div class="question"></label>
+					    <audio class="sound" src="chime.mp3"></audio> <!-- sound to be played when we click icon => http://soundbible.com/1598-Electronic-Chime.html -->
+
           </div>
 
 				<!--Progress Bar -->
@@ -806,6 +810,7 @@
   <script src="assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/main.js"></script>
+	 <script src="index.js"></script> <!-- link to index.js script -->
 
 	<!-- materialize  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
