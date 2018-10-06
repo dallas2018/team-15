@@ -15,3 +15,16 @@ def initdb():
 	db.create_all()
 	db.session.add(Applicant())
 	refreshdb()
+
+@manager.command
+def unfinished():
+	count = 0
+	unfinished = 0
+	for applicant in Applicant.query.all():
+		if(not applicant.finished):
+			unfinished++
+		count++
+	return unfinished/count
+
+if __name__ == '__main__':
+	manager.run()

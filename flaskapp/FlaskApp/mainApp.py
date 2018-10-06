@@ -18,3 +18,4 @@ date = time.strftime("%m/%d/%Y")
 
 @app.route('/newuser', methods=['GET', ['POST']])
 def index():
+	
