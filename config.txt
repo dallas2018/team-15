@@ -1,3 +1,0 @@
-# MySQL database password: bK1d3hwQk3
-# MySQL root@localhost: *&q0UPFD#Zy17kP
-test
