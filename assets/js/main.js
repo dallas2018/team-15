@@ -12,3 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 //Custom ID for forms
+  var input = document.getElementById("myInput");
+  input.addEventListener("keyup", function(event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+          document.getElementById("myBtn").click();
+      }
+  });
+
+  document.getElementById('myInput').onkeydown = function(event) {
+      if (event.keyCode == 13) {
+          alert('5');
+      }
+  }
