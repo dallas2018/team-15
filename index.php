@@ -115,6 +115,11 @@ $conn->close();
        <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 			<script src="assets/js/modernizr.custom.js"></script>
 
+			<!-- css bold font-->
+				p.thick {
+				    font-weight: bold;
+				}
+
 </head>
 <body>
 
@@ -127,7 +132,7 @@ $conn->close();
 			<a href="#apply">
 				<div class="scroll-down">
 					<span>
-							<i class="fa fa-angle-down fa-2x"></i>
+						<i class="fa fa-angle-down fa-2x"></i>
 					</span>
 				</div>
 			</a>
@@ -176,29 +181,33 @@ $conn->close();
 
 				<!-- area -->
           <div class="col s12 m12 l6">
-						<form action="postData.php" method="post">
+						<form action="#">
 							<label ><div class="question1">Hi, what language are you most comfortable with?</label></div>
-                        <?php if($language == "") {?>
-    					     <p>
-    				         <label>
-    				           <input id="myInput" name="language" type="radio" onclick="location.href='#apply2';"/>
-    				           <span class="choice">English</span>
-    				         </label>
-    					     </p>
-        				     <p>
-        				       <label>
-        				         <input id="myInput1" name="language" type="radio" onclick="location.href='#apply2';"/>
-        				         <span class="choice" >Español</span>
-        				       </label>
-        				     </p>
-                         <?php } ?>
+					     <p>
+					       <label>
+					         <input id="myInput" name="group1" type="radio" onclick="location.href='#apply2';"/>
+					         <span class="choice">English</span>
+					       </label>
+					     </p>
+					     <p>
+					       <label>
+					         <input id="myInput1" name="group1" type="radio" onclick="location.href='#apply2';"/>
+					         <span class="choice" >Español</span>
+					       </label>
+					     </p>
 					   </form>
           </div>
 
+
 					<!--Progress Bar -->
-					<div class="progress" style="height: 20px;">
-					  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="100" aria-valuemax="100"></div>
+						<br/>
+						<br/>
+
+					<div class="col s12 m12 l12">
+					<div class="progress" style="height: 18px;">
+					  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="100" aria-valuemax="100">10%</div>
 					</div>
+				</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -217,17 +226,30 @@ $conn->close();
 
 				<!-- area -->
           <div class="col s12 m12 l6">
-              <form action="postData" method="post">
-						<input name='f_name' type="text" class="validate" checked autofocus="autofocus"
-						onKeyDown="if(event.keyCode==13) location.href='#apply3';"
-						<label ><div class="question">What is your first name?</div><div class="question"></label>
-              </form>
-          </div>
+					<div class="container">
+							<div class="question">What is your first name?</p></div>
+							<div class="text-box" contenteditable="true">
+						</div>
+					</div>
+
+				<!-- Voice recognition -->
+					<i class="fa fa-microphone"></i>
+						<select id="voiceSelect"></select>
+				</div>
+					<audio class="sound" src="chime.mp3"></audio>
+					<script src="voice.js" async></script>
 
 				<!--Progress Bar -->
-					<div class="progress" style="height: 20px;">
-						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 4%" aria-valuenow="4" aria-valuemin="100" aria-valuemax="100">4%</div>
-					</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+			<div class="col s12 m12 l12">
+			<div class="progress" style="height: 18px;">
+				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="100" aria-valuemax="100">20%</div>
+			</div>
+			</div>
+
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -246,18 +268,20 @@ $conn->close();
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-                <form action="postData.php" method='post'>
-					<input name='l_name' type="text" class="validate"
+
+					<input  type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply4';"
 					<label ><div class="question">What is your last name?</label></div>
-                </form>
 				</div>
 
 				<!--Progress Bar -->
-				<div class="progress" style="height: 20px;">
-					<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 6%" aria-valuenow="6" aria-valuemin="100" aria-valuemax="100">6%</div>
-				</div>
+
+			<div class="col s12 m12 l12">
+			<div class="progress" style="height: 18px;">
+				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="100" aria-valuemax="100">30%</div>
+			</div>
+			</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -275,18 +299,19 @@ $conn->close();
 
 						<!-- area -->
 						<div class="col s12 m12 l6">
-                        <form action="postData.php" method="post">
-							<input name='dob' type="text" class="validate"
+
+							<input  type="text" class="validate"
 							checked autofocus="autofocus"
 							onKeyDown="if(event.keyCode==13) location.href='#apply5';"
 							<label ><div class="question">What is your birthday?</label></div>
-                        </form>
 						</div>
 
 						<!--Progress Bar -->
-							<div class="progress" style="height: 20px;">
-								<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="100" aria-valuemax="100">8%</div>
-							</div>
+						<div class="col s12 m12 l12">
+						<div class="progress" style="height: 18px;">
+							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="100" aria-valuemax="100">40%</div>
+						</div>
+						</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -304,23 +329,23 @@ $conn->close();
 
 				<!-- area -->
 				<div class="input-field col s12 l6 m12">
-					<form action="postData.php" method="post">
+					<form action="#">
 						<label ><div class="question">What's your gender?</label></div>
 						 <p>
 							 <label>
-								 <input id="myInput2" name="gender" type="radio" onclick="location.href='#apply6';" />
+								 <input id="myInput2" name="group1" type="radio" onclick="location.href='#apply6';" />
 								 <span class="choice" >Male</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput3" name="gender" type="radio" onclick="location.href='#apply6';"/>
+								 <input id="myInput3" name="group1" type="radio" onclick="location.href='#apply6';"/>
 								 <span class="choice" >Female</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput4" name="gender" type="radio" onclick="location.href='#apply6';"/>
+								 <input id="myInput4" name="group1" type="radio" onclick="location.href='#apply6';"/>
 								 <span class="choice" >Other</span>
 							 </label>
 						 </p>
@@ -328,9 +353,11 @@ $conn->close();
   		 </div>
 
 			 <!--Progress Bar -->
-				 <div class="progress" style="height: 20px;">
-					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="100" aria-valuemax="100">10%</div>
-				 </div>
+			 <div class="col s12 m12 l12">
+			 <div class="progress" style="height: 18px;">
+				 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="100" aria-valuemax="100">50%</div>
+			 </div>
+			 </div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -348,19 +375,19 @@ $conn->close();
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-                <form action="postData.php" method='post'>
-					<input name='social' type="text" class="validate"
+
+					<input  type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply7';"
 					<label >last 4 digits of your social security number?</label>
-                </form>
 				</div>
 
 				<!--Progress Bar -->
- 				 <div class="progress" style="height: 20px;">
- 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="100" aria-valuemax="100">12%</div>
- 				 </div>
-
+			<div class="col s12 m12 l12">
+ 			 	<div class="progress" style="height: 18px;">
+ 				 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="100" aria-valuemax="100">60%</div>
+ 			 </div>
+ 		 </div>
 
 
 			</div><!-- .row -->
@@ -378,99 +405,115 @@ $conn->close();
 						</div>
 
 				<!-- area -->
-					<form action="postData.php" method='post'>
+					<form action="#">
 						<label ><div class="question">What county do you currently live in?</label></div>
 						 <p>
 							 <label>
-								 <input id="myInput" class="with-gap" name="county" type="radio" onclick="location.href='#apply8';" />
+								 <input id="myInput" class="with-gap" name="group1" type="radio" onclick="location.href='#apply8';" />
 								 <span class="choice">Houston</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" class="with-gap" name="county" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput" class="with-gap" name="group1" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice" >Fort Bend</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" class="with-gap" name="county" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput" class="with-gap" name="group1" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice" >Galveston</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" name="county" type="radio" onclick="location.href='#apply8';" />
+								 <input id="myInput" name="group1" type="radio" onclick="location.href='#apply8';" />
 								 <span class="choice" >Harris</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="county" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice">Montgomery</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="county" type="radio" onclick="location.href='#apply8';"/>
+								 <input id="myInput"name="group1" type="radio" onclick="location.href='#apply8';"/>
 								 <span class="choice" >Other</span>
 							 </label>
 						 </p>
 					 </form>
+
+					 <!--Progress Bar-->
+					 <br>
+					 <div class="col s12 m12 l12">
+						 <div class="progress" style="height: 18px;">
+							 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="100" aria-valuemax="100">70%</div>
+						 </div>
+					 </div>
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
 	<!-- q7 end -->
 
-	<!-- q8 Top 3 Needs-->
+	<!-- q8 Top Needs-->
 	<section id="apply8" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
 
-				<div class="col s12 m12 l6">
+				<div class="col s12 m12 l12">
 							<span class="icon major style1 fa-map-marker"></span>
 						</div>
 
 				<!-- area -->
-					<form action="postData.php" method='post'>
+					<form action="#">
 						<label ><div class="question">Please select your top area of need?</label></div>
 						 <p>
 							 <label>
-								 <input id="myInput" name="need1" type="radio" onclick="location.href='#apply9';" />
+								 <input id="myInput" name="group2" type="radio" onclick="location.href='#apply9';" />
 								 <span class="choice">Job Placement</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice">Career Development</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice" >Training</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput" name="need1" type="radio" onclick="location.href='#apply9';" />
+								 <input id="myInput" name="group2" type="radio" onclick="location.href='#apply9';" />
 								 <span class="choice">Education</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice">Income Support</span>
 							 </label>
 						 </p>
 						 <p>
 							 <label>
-								 <input id="myInput"name="need1" type="radio" onclick="location.href='#apply9';"/>
+								 <input id="myInput"name="group2" type="radio" onclick="location.href='#apply9';"/>
 								 <span class="choice">Financial Education</span>
 							 </label>
 						 </p>
 					 </form>
+
+ 				 	<!--Progress Bar-->
+					 <div class="col s12 m12 l12">
+	  			 <div class="progress" style="height: 18px;">
+	  				 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="100" aria-valuemax="100">80%</div>
+	  			 </div>
+	  			 </div>
+
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
@@ -487,25 +530,28 @@ $conn->close();
 
 				<!-- area -->
 				<div class="col s12 m12 l6">
-                <form action="postData.php" method='post'>
-					<input name='time_invest' type="text" class="validate"
+
+					<input  type="text" class="validate"
 					checked autofocus="autofocus"
 					onKeyDown="if(event.keyCode==13) location.href='#apply10';"
 					<label >How many hours a week will you work?</label>
-                </form>
 				</div>
 
 					<!--Progress Bar -->
-	 				 <div class="progress" style="height: 20px;">
-	 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 18%" aria-valuenow="18" aria-valuemin="100" aria-valuemax="100">18%</div>
-	 				 </div>
+
+					<div class="col s12 m12 l12">
+					<div class="progress" style="height: 18px;">
+						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="100" aria-valuemax="100">90%</div>
+					</div>
+					</div>
+
 
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
 	<!-- q9 end -->
 
-	<!-- q10 Commitment slider-->
+	<!-- q10 Commitment chooser-->
 	<section id="apply10" class="pfblock pfblock-gray formAll" >
 		<div class="container">
 			<div class="row">
@@ -515,43 +561,53 @@ $conn->close();
 						</div>
 
 				<!-- area -->
-				<form action="postData.php" method='post'>
+				<form action="#">
 					<label ><div class="question">How long will you invest in the program?</label></div>
 					 <p>
 						 <label>
-							 <input id="myInput" name="time_invest" type="radio" onclick="location.href='#stories';" />
-							 <span  class="choice">1 - 3 Months</span>
+							 <input id="myInput" name="group1" type="radio" onclick="location.href='#stories';" />
+							 <span  class="choice">1 -3 Months</span>
 						 </label>
 					 </p>
 					 <p>
 						 <label>
-							 <input id="myInput"name="time_invest" type="radio" onclick="location.href='#stories';"/>
-							 <span class="choice">3 - 6 Months</span>
+							 <input id="myInput"name="group1" type="radio" onclick="location.href='#stories';"/>
+							 <span class="choice">3 -6 Months</span>
 						 </label>
 					 </p>
 					 <p>
 						 <label>
-							 <input id="myInput" name="time_invest" type="radio" onclick="location.href='#stories';" />
-							 <span class="choice">6 - 9 Months</span>
+							 <input id="myInput" name="group1" type="radio" onclick="location.href='#stories';" />
+							 <span class="choice">6 -9 Months</span>
 						 </label>
 					 </p>
 					 <p>
 						 <label>
-							 <input id="myInput" name="time_invest" type="radio" onclick="location.href='#stories';"/>
-							 <span class="choice">9 - 12 Months</span>
+							 <input id="myInput" name="group1" type="radio" onclick="location.href='#stories';"/>
+							 <span class="choice">9 -12 Months</span>
 						 </label>
 					 </p>
 				 </form>
 
 					<!--Progress Bar -->
-	 				 <div class="progress" style="height: 20px;">
-	 					 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="100" aria-valuemax="100">20%</div>
-	 				 </div>
+					<div class="col s12 m12 l12">
+					<div class="progress" style="height: 18px;">
+						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">100%</div>
+					</div>
+					</div>
+
+					<div class="col s12 m12 l12">
+						<button class="btn waves-effect waves-light" id="subBut" type="submit" name="action">Submit
+					        <i class="material-icons right">cloud</i>
+					    </button>
+					</div>
 
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
 	<!-- q10 end -->
+
+
 
 	<!-- articles start -->
 	<section id="stories" class="pfblock pfblock-gray">
@@ -559,7 +615,10 @@ $conn->close();
 		<div class="container">
         <div class="row">
 
-				<div class="col-sm-6 col-sm-offset-3">
+					<!-- <h2 class="pfblock-title">Success Stories</h2> -->
+
+<!--First Article-->
+				<div class="col-sm12 m12 l18 ">
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title">Success Stories</h2>
 						<div class="pfblock-line"></div>
@@ -569,54 +628,83 @@ $conn->close();
 					</div>
 				</div>
 
+				<div class="col sm12 m12 l8">
+					<blockquote>
+						<p>"Everything I learned at SER continues to help in other aspects of my life. I am completely thriving now, and I am very grateful."
+							<a href="http://serhouston.org/olayemi-yemi-brown/" class="myPapers"><b>Read More</b></a>
+						</p>
+						<footer>Olayemi Brown</footer>
+					</blockquote>
 
-			</div>
+				</div>
 
-			<div>
-				<table style="width:100%">
-				  <tr>
-				    <th>Firstname</th>
-				    <th>Lastname</th>
-				    <th>Age</th>
-				  </tr>
-				  <tr>
-				    <td>Jill</td>
-				    <td>Smith</td>
-				    <td>50</td>
-				  </tr>
-				  <tr>
-				    <td>Eve</td>
-				    <td>Jackson</td>
-				    <td>94</td>
-				  </tr>
-				</table>
-			</div>
+				<div class="col sm12 m12 l4">
+					<div class="cbp-qtcontent">
+						  <img src="assets/img/Olayemi.png" alt="client-1" width="250"/>
+					</div>
+				</div>
 
+					<p><p style="font-size:36px">Olayemi (Yemi) Brown</p>
+					<p>Olayemi (Yemi) Brown immigrated to Houston at the age of 16 from Nigeria. After starting and stopping her career repeatedly due to raising a family, she came to SER for help in finding job training for a high-skill, high-paying position. She was connected to BankWork$, and received the job training she needed to pursue a career in the financial industry.
+After graduating, Yemi landed a good job, where she’s remained for the last year and a half. Now up for a promotion, Yemi looks back on her time at SER with gratitude and appreciation. Read her full story here.</p>
+
+
+
+<!--Second Article, Rusty -->
+<div class="col sm12 m12 l8">
+						<blockquote>
+							<p>"Go to SER; they have awesome programs that will open doors. They have people there who will really help you."
+								<a href="http://serhouston.org/rusty-roberts/" class="myPapers"><b>Read More</b></a>
+							</p>
+							<footer>Rusty Roberts</footer>
+						</blockquote>
+
+					</div>
+						<div class="col sm12 m12 l4">
+							<div class="cbp-qtcontent">
+									<img src="assets/img/Rusty.png" alt="client-1" width="250"/>
+							</div>
+						</div>
+
+								<p><p style="font-size:36px">Rusty Roberts</p>
+								<p>Rusty Roberts was born on the wrong side of the railroad tracks. Exposed to drugs at a young age, Rusty was in and out of prison for the better part of his life until he realized it wasn’t what he wanted from life. Determined to make a break from his past, Rusty worked with SER to enroll in career services and start a great job in the construction field. Now, with SER financial coaching, Rusty is learning money management skills, beginning to establish credit, and opening bank accounts.</p>
+	<!--Third Article, Jasson -->
+
+								<div class="col sm12 m12 l8">
+									<blockquote>
+										<p>"To finally have a career that gives you purpose is amazing. Thanks to SER, I feel like I now have a great future ahead of me."
+											<a href="http://serhouston.org/jasson-portocarrero/" class="myPapers"><b>Read More</b></a>
+										</p>
+										<footer>Jasson Portocarrero</footer>
+									</blockquote>
+
+								</div>
+
+								<div class="col sm12 m12 l4">
+									<div class="cbp-qtcontent">
+									  <img src="assets/img/Jasson.png" alt="client-1" width="250"/>
+									</div>
+								</div>
+
+									<p><p style="font-size:36px">Jasson Portocarrero</p>
+									<p>Jasson Portocarreo was born in Alief and raised along side his two sisters by his single mother. Jasson received his high school diploma, but didn’t excel like he had hoped. After high school, he wanted to go to college, but in order to make ends meet for his family he began working odd jobs. However, making minimum wage just wasn’t enough. After being referred to SER by an employer partner, Jasson was able to complete his Cable Training and gain employability skills. Soon after working with SER, Jasson began working for MCA communications, and he finally feels like he has a job that gives him purpose.</p>
+						</div>
+					</div>
 
 			<div class="row">
 
 
 			<div id="cbp-qtrotator" class="cbp-qtrotator">
                 <div class="cbp-qtcontent">
-                    <img src="assets/img/content.jpg" alt="client-1" width="350" />
                     <blockquote>
-                      <p>"Cultures, religious sects, and any word used to differentiate and divide society is seriously endangered."
-												<a href="https://medium.com/@yasinehsan11/bits-and-bytes-fight-or-flight-3786842b56da" class="myPapers"><b>Read More</b></a>
-											</p>
-                      <footer>Bits and Bytes: Fight or Flight</footer>
-                    </blockquote>
-                </div>
-								<div class="cbp-qtcontent">
-                    <img src="assets/img/glasses.jpg" alt="client-1" width="350"/>
-                    <blockquote>
-                      <p>"I was looking for CEOs, professionals, teachers, students and anyone with a story."
-												<a href="https://medium.com/@yasinehsan11/my-story-my-mantra-8e2ba2fe0861" class="myPapers"><b>Read More</b></a>
-											</p>
-                      <footer>My Story, My Mantra</footer>
+
+                      <footer>Yemi Brown</footer>
                     </blockquote>
                 </div>
             </div>
             </div><!-- .row -->
+
+
 		</div><!-- .row -->
 	</section>
 	<!-- article end -->
@@ -631,6 +719,11 @@ $conn->close();
 
 				<div class="col-sm-12">
 
+					<ul class="social-links">
+						<li><a href="https://github.com/YasinEhsan" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-github" class="myCode"></i></a></li>
+						<li><a aria-hidden="true" href="mailto:yasinehsan11@gmail.com?Subject=Visited%20Website%20--"
+							 class="wow fadeInUp" data-wow-delay=".6s"><i class="fa fa-envelope"></i></a></li>
+					</ul>
 
 					<!-- <p class="heart">
                         Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Nottingham
@@ -666,6 +759,7 @@ $conn->close();
   <script src="assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/main.js"></script>
+	 <script src="assets/js/voice.js"></script> <!-- link to index.js script -->
 
 	<!-- materialize  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
