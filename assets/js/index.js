@@ -8,6 +8,12 @@ let container = document.querySelector('col s12 m12 l6');
 container.appendChild(paragraph);
 const sound = document.querySelector('.sound');
 
+$(document).ready(function() {
+	$("#subBut").click(function() {
+		$.post($("#language").attr("action")
+
+	}
+}
 icon.addEventListener('click', () => {
   sound.play();
   dictate();
