@@ -7,6 +7,11 @@ $db_name = $ini['db_name'];
 $db_user = $ini['db_user'];
 $db_pass = $ini['db_pass'];
 
+$dob = ""
+$f_name = ""
+$l_name = ""
+$social = ""
+
 if(isset($_POST['dob'])) {
     $dob = $_POST['dob'];
 }
@@ -26,11 +31,11 @@ if(isset($_POST['social'])) {
 
 $conn = mysqli_connect("localhost", $db_user, $db_pass, $db_name);
 $resumeQuery = "select * from clients where dbo='".$dbo."', f_name='".$f_name."', l_name='".$l_name."', social='".$social."';";
-$sqlStatement = $conn->prepare($resumeQuery);
-$sqlStatement->execute();
-$row = $sqlStatement->fetch(PDO::FETCH_ASSOC);
-
-if(!$mysqli) {
+// $sqlStatement = $conn->prepare($resumeQuery);
+// $sqlStatement->execute();
+// $row = $sqlStatement->fetch(PDO::FETCH_ASSOC);
+//
+if(!$conn) {
     echo "THERE WAS AN ERROR CONNECTING";
 }
 
