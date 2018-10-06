@@ -8,6 +8,9 @@
  * Licensed under MIT
 */
 
+/*Icons*/
+/*______________________________________________*/
+
 	.icon {
 		text-decoration: none;
 		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -1106,4 +1109,19 @@ figure.effect-bubba:hover p {
 		width: 80px;
 	}
 
+}
+
+/*Icon for voice recognition */
+.fa {
+  color: white;
+  background: #1e2440;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1rem;
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
