@@ -7,7 +7,7 @@
 - [x] (UI)Custom TypeForm
 - [x] (UI)Landing Page
 - [x] (UI)Success stories
-- [ ] (UI)Save Forms
+- [ ] (UI)Resume forms
 
 
 ## Video Walkthrough
